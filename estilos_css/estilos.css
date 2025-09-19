@@ -1,0 +1,629 @@
+/*Estilos generales*/
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.separador {
+    width: 100%;
+    height: 70px;
+}
+
+#fondo {
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+/*--------------------Menu normal--------------------*/
+nav {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    transition: all 1s linear;
+    background-color: rgba(0, 0, 0, 0.82);
+}
+
+#marca {
+    color: rgb(255, 255, 255);
+    margin: 0px 18px;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.men.u {
+    margin: 0px 40px;
+}
+
+.men {
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+/*--------------------Relleno de la pagina--------------------*/
+main {
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+    display: block;
+}
+
+/*-----CONTENEDOR DE NOTICIAS-----*/
+#noticias {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    padding: 2px;
+    background-color: rgb(59, 59, 59);
+}
+
+.card-cont {
+    background-color: black;
+    position: relative;
+    margin: 2px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.card {
+    object-fit: cover;
+    height: 360px;
+}
+
+.title-noticias {
+    order: 0;
+    flex-basis: 90%;
+    flex-grow: 10;
+    height: 60px;
+    margin: 4px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: #050029;
+    align-items: center;
+}
+
+.title-noticias h1 {
+    background: #0011a795;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: azure;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 12px;
+    padding: 0px 90px;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+}
+
+.b1 {
+    order: 1;
+    flex-basis: 60%;
+    flex-grow: 3;
+}
+
+.b2 {
+    order: 2;
+    flex-basis: 38%;
+    flex-grow: 3;
+}
+
+.b3 {
+    order: 3;
+    flex-basis: 50%;
+    flex-grow: 2;
+
+}
+
+.b4 {
+    order: 4;
+    flex-basis: 48%;
+    flex-grow: 2;
+}
+
+.b5 {
+    order: 5;
+    flex-basis: 58%;
+    flex-grow: 2;
+}
+
+.b6 {
+    order: 6;
+    flex-basis: 40%;
+    flex-grow: 2;
+}
+
+.blockn {
+    position: absolute;
+    top: 31%;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9), rgba(0, 0, 0));
+}
+
+
+.title {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 180px 90px 0px 30px;
+    color: white;
+    text-wrap: wrap;
+}
+
+.desc {
+    text-align: justify;
+    text-wrap: wrap;
+    font-size: 16px;
+    margin: 14px 35px 25px 30px;
+    color: rgb(149, 149, 149);
+}
+
+/*-----CONTENEDOR DE PRODUCTOS-----*/
+#productos {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 0px ;
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+.titulo-productos {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    background-color: #050029;
+}
+
+.titulo-productos h1 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    background-color: #010386;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+}
+
+.cont-prod {
+    width: 50%;
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.prod {
+    width: 100%;
+    aspect-ratio: 16 / 8;
+    position: absolute;
+    transition: all 1.5s ease-in-out;
+}
+
+.legd-prod {
+    width: 100%;
+
+}
+
+/*-----SLIDER MANUAL-----*/
+.cont.sl-m {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgba(123, 123, 123, 0.062);
+}
+
+.cont-slider-m {
+    width: 100%;
+    display: flex;
+}
+
+#manual_slider {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px 0px;
+    justify-content: center;
+    transition: all 2s ease-in-out;
+}
+
+.grup-sl-m {
+    width: 99VW;
+    padding: 0px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titulo-sl{
+    height: 150px;
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+    margin: 0px 35% 25px 35%;
+    z-index: 100;
+
+}
+
+.titulo-slider-manual {
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.titulo-slider-manual h1 {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-style: italic;
+    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #39393975;
+    background: linear-gradient(to right, #39393975, #3150dcf1, #39393975);
+}
+
+.Log-nitendo {
+    width: auto;
+    height: 150px;
+}
+
+.log-play {
+    width: auto;
+    height: 150px;
+}
+
+.log-riot {
+    width: auto;
+    height: 320px;
+    margin-top: -86px;
+}
+
+.log-xbo {
+    width: auto;
+    height: 320px;
+    margin-top: -100px;
+}
+
+.fondo-sl {
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    left: 0;
+    transition: all 2s ease-in-out;
+}
+
+#fon-n{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/113/371/661/video-game-the-legend-of-zelda-link-s-awakening-nintendo-switch-link-the-legend-of-zelda-link-s-awakening-hd-wallpaper-preview.jpg');
+    background-size: contain; /* Ajusta la imagen para cubrir todo el div */
+    background-position: top; /* Centra la imagen */
+    background-repeat: no-repeat;
+    clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+    top: 0;
+}
+
+#fon-p{
+    background-image: url('https://img.freepik.com/vector-premium/fondo-tecnologia-color-azul-claro_268965-14.jpg'); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    bottom: 0;
+    clip-path: polygon(100% 100%, 100% 100%, 50% 100%, 0 100%, 0 100%);
+}
+
+#fon-l{
+    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2024/02/beautiful-fantasy-landscape-desktop-wallpaper-preview.jpg');
+    top: 0;
+    clip-path: polygon(100% 0, 100% 0, 50% 0, 0 0, 0 0);
+}
+
+#fon-x{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/014/643/non_2x/modern-futuristic-black-background-combination-with-green-technology-diagonal-vector.jpg');
+   background-repeat: no-repeat;
+   background-size: 100%  100%;
+    bottom: 0;
+    clip-path: polygon(100% 100%, 100% 100%, 50% 100%, 0 100%, 0 100%);
+}
+
+.slider-m {
+    width: 20vw;
+    height: auto;
+    border-radius: 10px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cuadrado {
+    width: 19vw;
+    aspect-ratio: 16 / 12;
+    object-fit: cover;
+    margin: 0.5vw;
+    border-radius: 10px;
+}
+
+.legd-cuadrado {
+    background-color: rgba(50, 50, 50, 0.3);
+    color: white;
+    text-align: center;
+    font-size: 120%;
+    margin: 0% 8% 3% 8%;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.flecha {
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 100;
+}
+
+.flecha:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
+/*----------------------------publicidad------------------------*/
+#cont-infinite {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    background-color: #000000;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.cont-public {
+    width: 100vw;
+    height: 58vh;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.public-text {
+    width: 100%;
+    height: 9vh;
+    margin: 12px 0px;
+    background-color: #010386;
+    display: flex;
+    align-items: center;
+}
+
+.public-text h1 {
+    color: azure;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 60px 10px 30px;
+    background-color: #0000005e;
+    clip-path: polygon(0 0, 100% 0%, 96.5% 100%, 0% 100%);
+}
+
+.public {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    position: absolute;
+    transition: left 7s linear;
+}
+
+.extra {
+    background-color: #000000;
+    width: 105vw ;
+    position: absolute;
+    left: 0;
+    height: 57vh;
+    z-index: 19;
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0 100%);
+}
+
+#primero {
+   left: 0; 
+}
+
+#segundo {
+    left: 100%;
+}
+
+#tercero {
+    left: -100%;
+}
+
+.public img {
+    width:60vw;
+    margin-left: -25%;
+    clip-path: polygon(44% 0%, 100% 0%, 90% 100%, 34% 100%);
+}
+
+
+/*-------------------------------separador-------------------------------------------*/
+
+/*-----CLASES EXTRA-----*/
+.desplazar {
+    transform: translateY(-20%);
+}
+
+.uno {
+    z-index: 40;
+}
+
+.dos {
+    z-index: 30;
+}
+
+.tres {
+    z-index: 20;
+}
+
+/*---------------------------------------------------loader---------------------------------------------*/
+.lds-ring {
+    background-image: url('https://img.freepik.com/fotos-premium/fondo-azul-oscuro-muchos-cubos_889227-20348.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    clip-path: circle(141.2% at 100% 0);
+    transition: clip-path 3s ease-in-out;
+}
+
+#logo-loader {
+    width: 25vw;
+    transition: all 1s ease-in-out;
+    color: #fff;
+
+}
+
+#efecLoader {
+    width: 200px;
+    height: 125px;
+    border-radius: 250px;
+    background-color: rgba(0,178,255,0.8);
+    box-shadow:
+    0 0 115px rgba(0,178,255,1),
+    0 0 120px rgba(0,178,255,1),
+    0 0 130px rgba(0,178,255,1),
+    0 0 150px rgba(38,104,127,1),
+    0 0 190px rgba(38,104,127,1),
+    0 0 200px rgba(38,104,127,1),
+    0 0 210px rgba(38,104,127,1),
+    0 0 250px rgba(38,104,127,1),
+    0 0 290px rgba(38,104,127,1);
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+
+.loader {
+    clip-path: circle(0% at 100% 0);
+}
+
+footer{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 25px 20px 0px 20px;
+}
+/**------------------------FOOTER-------------------------*/
+#cajaPrincipalFooter{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around; 
+}
+
+
+.teAyudamos{
+    width: 200px;
+    text-align: justify;
+    padding: 15px 15px 0px 15px;
+    align-items: center;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.servicioAlCliente{
+    width: 200px;
+    text-align: justify;
+    padding: 5px 5px 0px 5px;
+    align-items: center;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+}
+
+
+.contactanos{
+    width: 220px;
+    text-align: justify;
+    padding: 10px 10px 0px 10px;
+    align-items: center;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#cajaPrincipalFooter aside a:hover{
+    color: rgb(255, 0, 0);
+}
+
+
+.estilolinkssubrayado{
+    color: rgb(255, 255, 255);
+    text-decoration:underline; 
+}
+
+
+.estilolink{
+    color: rgb(255, 255, 255);
+}
+
+
+.mapa{
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.articulo{
+    display: flex;
+}
+
+.derechosReservados{
+    width: 50%;
+    color: rgb(255, 255, 255);
+
+}
+
+.derechosLetra{
+    display: flex;
+}
+
+
+.imagenRedes{
+    margin: 10px 10px 0px 10px;
+    width: 40px;
+    height: 40px;
+}
